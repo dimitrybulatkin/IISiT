@@ -1,0 +1,32 @@
+﻿<defrules> 
+
+<defrule name="GoldDefrule" question="Укажите каков ваш бюджет: 1 - менее 1 миллиона; 2 - от 1 до 1,5 миллиона ; 3 - более 2 миллионов" validAnswers="1,2,3"> 
+</defrule> 
+
+<defrule name="KomnataDefrule" question="Укажите сколько комнат хотите приобрести: 1 - 1 комнату; 2 - 2 комнаты ; 3 - 3комнаты" validAnswers="1,2,3"> 
+</defrule> 
+
+<defrule name="MebelDefrule" question="Необходимо наличие мебели ? (да/нет) ?" validAnswers="да,нет"> 
+</defrule> 
+
+<defrule name="RemontDefrule" question="Необходим ли Вам ремонт ? (да/нет) ?" validAnswers="да,нет"> 
+</defrule> 
+
+<defrule name="BalkonDefrule" question="Должен ли присутствовать балкон ? (да/нет) ?" validAnswers="да,нет"> 
+</defrule> 
+
+
+
+<defrule name="BudgetDefrule"> 
+   <premise name="Gold" value="1" /> 
+   <premise name="Komnata" value="1" /> 
+   <premise name="Mebel" value="нет" /> 
+</defrule>
+ 
+<defrule name="Adres1Defrule" univName="Ленина*1"> 
+   <premise name="Budget" value="да" /> 
+   <premise name="Remont" value="нет" /> 
+   <premise name="Balkon" value="нет" /> 
+</defrule>
+
+</defrules> 
